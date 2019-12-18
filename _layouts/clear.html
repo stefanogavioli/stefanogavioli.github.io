@@ -6,26 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
     <title>{{include.title}}</title>
-    <meta property="og:title" content="{{include.title}}"/>
+    <meta property="og:title" content="{{page.title}}"/>
     <meta property="og:locale" content="{{site.locale}}"/>
     <meta name="description"
           content="{{site.description}}"/>
     <meta property="og:description"
           content="{{site.description}}"/>
-    <link rel="canonical" href="{{site.url}}{{include.rel_url}}"/>
-    <meta property="og:url" content="{{site.url}}{{include.rel_url}}"/>
+    <link rel="canonical" href="{{site.url}}{{page.url}}"/>
+    <meta property="og:url" content="{{site.url}}{{page.url}}"/>
     <meta property="og:site_name" content="{{site.title}}"/>
     <meta property="og:site_name" content="Your awesome title">
     <script type="application/ld+json">
         {
             "@type": "WebSite",
-            "url": "{{include.rel_url}}",
+            "url": "{{page.url}}",
             "name": "{{site.title}}",
-            "headline": "{{include.title}}",
+            "headline": "{{page.title}}",
             "description": "{{site.description}}",
             "@context": "https://schema.org"
-        }</script>
+        }
+
+    </script>
     <!-- End Jekyll SEO tag -->
-    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Your awesome title">
 </head>
+{% include ciao.html dest="no" %}
+<body>
+{{content}}
+</body>
+</html>
