@@ -1,0 +1,8 @@
+- html: <a href="mailto:gavioli.stefano.9@gmail.com" target="_blank">gavioli.stefano.9@gmail.com</a>
+  icon: mail.jpg
+
+- html: <a href="https://www.linkedin.com/in/stefano-gavioli" target="_blank"/>linkedin.com/in/stefano-gavioli</a>
+  icon: linkedin.jpg
+
+- html: <a href="https://stefanogavioli.github.io/" target="_blank">stefanogavioli.github.io</a>
+  icon: website.jpg
