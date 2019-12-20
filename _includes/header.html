@@ -1,18 +1,17 @@
 <div class="header">
     <div class="first-line">
-        <div class="site-pic-container">
+        <div class="first-line-container">
             <img class="site-pic" src="assets/{{include.pic}}">
-        </div>
-        <div class="site-title">
             {{include.name}}
         </div>
     </div>
     <div class="contact-list-container">
         {% for contact in site.data.contacts %}
         <div class="contact">
-            <img class=contact-pic src="assets/{{contact.img}}}"/>
-            <div class="contact-html"> {{contact.html}}</div>
+            <i class="contact-pic material-icons">{{contact.icon}}</i>
+            {{contact.html}}
         </div>
         {% endfor %}
+        <br style="clear: left;"/>
     </div>
 </div>
