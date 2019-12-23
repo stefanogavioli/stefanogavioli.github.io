@@ -2,8 +2,20 @@
 .header {
   background-color: #1756a9;
   color: black;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100%;
+  //display: flex;
+  vertical-align: middle;
+  padding: 5% 0;
+  margin-bottom: 5vh;
+}
 
+.header:first-child {
+  padding: 10% 0;
+}
+
+.header a {
+  transition: 0.3s;
 }
 
 .header a:any-link, a:visited, {
@@ -20,25 +32,58 @@
   height: 70%;
   display: flex;
   color: #000036;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 65pt;
+  margin-bottom: 10vh;
+}
+
+.first-line h1 {
+  font-weight: 700;
+  font-size: 70pt;
+  display: inline;
+}
+
+
+.first-line img {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .first-line-container {
-  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: auto 0;
+}
+
+.first-line-container * {
+  margin: 10px;
 }
 
 .contact-list-container {
   height: 30%;
-  display: flex;
   margin-left: 5%;
   margin-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact {
   float: left;
   width: 33%;
+  vertical-align: center;
+  display: inline-flex;
+  min-width: 300px;
+  margin-bottom: 5vh;
+}
+
+contact a {
+
+}
+
+.contact i {
+  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .site-title {
@@ -51,5 +96,27 @@
 
 img {
   min-width: 20px;
+  max-width: 50px;
   min-height: 20px;
+  max-width: 50px;
+  margin-bottom: 5vh;
+}
+
+.main {
+  margin-left: 2vw;
+}
+
+.collapsible {
+  margin-right: 2vh;
+  box-shadow: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }

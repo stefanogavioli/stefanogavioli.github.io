@@ -1,0 +1,27 @@
+@media screen and (max-width: 999px) {
+  .first-line-container {
+    display: grid;
+  }
+  .contact-list-container {
+    display: grid;
+  }
+  .first-line-container * {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .first-line {
+    font-size: 45pt;
+  }
+  .first-line h1 {
+    font-size: 55pt;
+  }
+
+  h1 {
+    font-size: 30pt;
+  }
+  body {
+    font-size: 13pt;
+  }
+}
