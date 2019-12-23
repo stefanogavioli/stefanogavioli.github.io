@@ -1,0 +1,35 @@
+<div class="main-point">
+    <div class="main-point-header">
+        <img src="/assets/img/larrow.png"/>
+        <h1>Educazione</h1>
+    </div>
+    {% for edu in site.data.education %}
+    <div class="sub-point">
+        <div class="sub-point-header">
+            <img src="/assets/img/larrow-small.png"/>
+            <h2>{{edu.name}} / </h2>
+            <p>{{edu.init}} - {{edu.end}}</p>
+        </div>
+        <div class="sub-point-content">
+            <h3 class="sub-point-content-at">{{edu.at}}</h3>
+            <p class="sub-point-content-short">{{edu.short}}</p>
+
+            <div class="sub-point-content-list">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Conoscenze:
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                {% for item in edu.learnt %}
+                                <li>{{item.name}}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

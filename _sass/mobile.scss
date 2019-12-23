@@ -8,6 +8,10 @@
   .first-line-container * {
     margin: 0px;
   }
+
+  .main {
+    column-count: 1;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -17,6 +21,15 @@
   .first-line h1 {
     font-size: 55pt;
   }
+
+  .main-point-header > h1 {
+    font-size: 32pt;
+  }
+
+  .sub-point-header > p {
+    margin-left: 30px;
+  }
+
 
   h1 {
     font-size: 30pt;

@@ -1,6 +1,6 @@
 
 .header {
-  background-color: #1756a9;
+  background-color: #2D71B8;
   color: black;
   min-height: 100vh;
   min-width: 100%;
@@ -31,7 +31,7 @@
   margin-left: 5%;
   height: 70%;
   display: flex;
-  color: #000036;
+  color: #050B10;
   font-weight: 500;
   font-size: 65pt;
   margin-bottom: 10vh;
@@ -47,6 +47,7 @@
 .first-line img {
   max-width: 200px;
   max-height: 200px;
+  margin-bottom: 8vh;
 }
 
 .first-line-container {
@@ -77,7 +78,7 @@
   margin-bottom: 5vh;
 }
 
-contact a {
+.contact a {
 
 }
 
@@ -94,14 +95,6 @@ contact a {
 }
 
 
-img {
-  min-width: 20px;
-  max-width: 50px;
-  min-height: 20px;
-  max-width: 50px;
-  margin-bottom: 5vh;
-}
-
 .main {
   margin-left: 2vw;
 }
@@ -109,14 +102,118 @@ img {
 .collapsible {
   margin-right: 2vh;
   box-shadow: none;
+
+}
+
+.main-point-header {
+  margin-bottom: 2vh;
+}
+
+.main-point-header > h1 {
+  font-size: 40pt;
+  color: #050B10;
+  position: relative;
+  top: 6px;
+}
+
+.main-point-header > img {
+  min-width: 50px;
+  min-height: 60px;
+}
+
+.main-point-header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sub-point {
+  margin-left: 4vw;
+  margin-bottom: 5vh;
+}
+
+.sub-point-header > h2 {
+  font-size: 15pt;
+  color: #054C9C;
+}
+
+.sub-point-header > h2, p {
+  position: relative;
+  top: 7px;
+}
+
+.sub-point-header img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.sub-point-header {
+  color: #2D71B8;
+  font-size: 14pt;
+}
+
+.sub-point-header > * {
+  display: inline-block;
+  align-items: baseline;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.sub-point-content > h3 {
+  font-size: 14pt;
+}
+
+.sub-point-content > p {
+  margin-bottom: 2em;
+}
+
+.sub-point-content {
+  margin-left: 40px;
+}
+
+.collapsible-header {
+  background-color: transparent;
+}
+
+.collapsible-body li {
+  margin-bottom: 0.5em;
+}
+
+.collapsible-body li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2D71B8; /* Change the color */
+  font-weight: bolder; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+
+}
+
+.collapsible-body ul {
+  list-style: none;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  font-size: 13pt;
+  color: #050B10;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
+}
+
+img {
+  min-width: 20px;
+  max-width: 50px;
+  min-height: 20px;
+  max-height: 50px;
+}
+
+//TODO: change from column-count to two divs
+.main {
+  column-count: 2;
+  column-rule: 2px dashed rgba(5, 76, 156, 0.2);
+  column-gap: 5vw;
 }
