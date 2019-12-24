@@ -6,12 +6,23 @@
     display: grid;
   }
   .first-line-container * {
-    margin: 0px;
+    margin: 0;
   }
 
-  .main {
-    column-count: 1;
+  .main-point-header > h1 {
+    font-size: 7.5vw;
   }
+
+  .sub-point-header > h2, .sub-point-header > p {
+    font-size: 4.7vw;
+  }
+
+  .main > * {
+    clear: both;
+    float: none;
+    max-width:100%;
+  }
+  
 }
 
 @media screen and (max-width: 425px) {
@@ -22,12 +33,9 @@
     font-size: 55pt;
   }
 
-  .main-point-header > h1 {
-    font-size: 32pt;
-  }
 
-  .sub-point-header > p {
-    margin-left: 30px;
+  .sub-point-content {
+    margin-left: 40px;
   }
 
 

@@ -1,0 +1,36 @@
+{% assign data=include.data %}
+
+<div class="main-point">
+    <div class="main-point-header" id="main-point-header-{{include.name | slugify}}">
+        <img src="/assets/img/larrow.png"/>
+        <h1>{{include.name}}</h1>
+    </div>
+
+    <div class="sub-point">
+        <div class="sub-point-content">
+            {% for element in data %}
+            <div class="sub-point-bar-container">
+                <p class="sub-point-bar-name">{{element.name}}</p>
+                <div class="ldBar label-center" data-value="0";
+                        id="{{element.name | slugify}}"></div>
+            </div>
+            {% endfor %}
+            <div class=" sub-point-content-list
+                ">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Altre:
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                {% for item in element.learnt %}
+                                <li>{{item.name}}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+{% assign data=include.data %}
+{% assign subclass="no-head-pic" %}
+<div class="main-point {{subclass}}">
+    <div class="main-point-header {{subclass}}" id="main-point-header-{{include.name | slugify}}">
+        <img src="/assets/img/larrow.png"/>
+        <h1>{{include.name}}</h1>
+    </div>
+    {% for element in data %}
+    <div class="sub-point {{subclass}}">
+        <div class="sub-point-header {{subclass}}">
+            <img src="/assets/img/larrow-small.png"/>
+            <h2>{{element.name}} </h2>
+        </div>
+        <div class="sub-point-content {{subclass}}">
+            <p class="sub-point-content-short {{subclass}}">{{element.short}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

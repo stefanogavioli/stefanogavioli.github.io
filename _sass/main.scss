@@ -110,10 +110,10 @@
 }
 
 .main-point-header > h1 {
-  font-size: 40pt;
+  font-size: 30pt;
   color: #050B10;
   position: relative;
-  top: 6px;
+  top: 8px;
 }
 
 .main-point-header > img {
@@ -138,7 +138,7 @@
 
 .sub-point-header > h2, p {
   position: relative;
-  top: 7px;
+  top: 8px;
 }
 
 .sub-point-header img {
@@ -170,8 +170,47 @@
   margin-left: 40px;
 }
 
+
 .collapsible-header {
   background-color: transparent;
+}
+
+
+.sub-point-bar-container {
+  line-height: 2em;
+  min-height: 60px;
+}
+
+.sub-point-bar-name {
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+.ldBar {
+  float: left;
+  margin-top: 19px;
+  margin-left: 50px;
+}
+
+.ldBar > * {
+  float: left;
+}
+
+.ldBar path.mainline {
+  stroke-width: 20px;
+  stroke: #2D71B8;
+  stroke-linecap: round;
+}
+
+.ldBar path.baseline {
+  stroke-width: 14pt;
+  stroke-linecap: square;
+  stroke-opacity: .5;
+}
+
+.ldBar-label {
+  margin-top: 20px;
 }
 
 .collapsible-body li {
@@ -184,7 +223,7 @@
   font-weight: bolder; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-left: -2em; /* Also needed for space (tweak if needed) */
 
 }
 
@@ -213,7 +252,22 @@ img {
 
 //TODO: change from column-count to two divs
 .main {
-  column-count: 2;
-  column-rule: 2px dashed rgba(5, 76, 156, 0.2);
-  column-gap: 5vw;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.column-left {
+  min-width: 305px;
+  max-width: 49%;
+  float: left;
+}
+
+.column-right {
+
+  min-width: 305px;
+  max-width: 49%;
+  float: left;
+
 }
