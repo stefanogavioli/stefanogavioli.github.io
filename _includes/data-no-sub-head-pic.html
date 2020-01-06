@@ -9,7 +9,7 @@
     <div class="sub-point {{subclass}}">
         <div class="sub-point-header {{subclass}}">
             <img src="/assets/img/larrow-small.png"/>
-            <h2>{{element.name}} </h2>
+            <h2 {% if include.name == "Interessi" %}  class="interessi-h2" {%endif%}>{{element.name}} </h2>
         </div>
         <div class="sub-point-content {{subclass}}">
             <p class="sub-point-content-short {{subclass}}">{{element.short}}</p>
@@ -17,3 +17,4 @@
     </div>
     {% endfor %}
 </div>
+

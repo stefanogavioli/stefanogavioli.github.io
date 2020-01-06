@@ -1,18 +1,25 @@
-[
-  {
-    "name": "Teamwork",
-    "value": 80
-  },
-  {
-    "name": "Lead",
-    "value": 80
-  },
-  {
-    "name": "Boh",
-    "value": 90
-  },
-  {
-    "name": "Prova",
-    "value": 75
-  }
-]
+{
+  "elements": [
+    {
+      "name": "Teamwork",
+      "value": 85
+    },
+    {
+      "name": "Problem Resolution",
+      "value": 80
+    },
+    {
+      "name": "Self Organization",
+      "value": 90
+    },
+    {
+      "name": "Curiosity",
+      "value": 75
+    },
+    {
+      "name": "Creativity",
+      "value": 34
+    }
+  ]
+}
+  

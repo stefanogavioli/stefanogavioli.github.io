@@ -177,12 +177,15 @@
 
 
 .sub-point-bar-container {
+  display: flex;
+  vertical-align: middle;
   line-height: 2em;
   min-height: 60px;
 }
 
 .sub-point-bar-name {
-  width: 20%;
+  width: 30%;
+  line-height: normal;
   height: auto;
   float: left;
 }
@@ -250,7 +253,6 @@ img {
   max-height: 50px;
 }
 
-//TODO: change from column-count to two divs
 .main {
   width: 95%;
   display: flex;
@@ -260,14 +262,14 @@ img {
 
 .column-left {
   min-width: 305px;
-  max-width: 49%;
+  max-width: 48%;
   float: left;
 }
 
 .column-right {
 
   min-width: 305px;
-  max-width: 49%;
+  max-width: 48%;
   float: left;
 
 }

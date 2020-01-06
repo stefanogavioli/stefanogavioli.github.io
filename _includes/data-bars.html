@@ -8,13 +8,14 @@
 
     <div class="sub-point">
         <div class="sub-point-content">
-            {% for element in data %}
+            {% for element in data.elements %}
             <div class="sub-point-bar-container">
                 <p class="sub-point-bar-name">{{element.name}}</p>
                 <div class="ldBar label-center" data-value="0";
                         id="{{element.name | slugify}}"></div>
             </div>
             {% endfor %}
+            {% if data.learnt %}
             <div class=" sub-point-content-list
                 ">
                 <ul class="collapsible">
@@ -23,14 +24,15 @@
                         </div>
                         <div class="collapsible-body">
                             <ul>
-                                {% for item in element.learnt %}
-                                <li>{{item.name}}</li>
+                                {% for item in data.learnt %}
+                                <li>{{item}}</li>
                                 {% endfor %}
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>

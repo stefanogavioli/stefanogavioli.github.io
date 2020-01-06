@@ -6,3 +6,7 @@
   learnt:
     - name: J2EE
     - name: Weblogic
+    - name: JUnit
+    - name: JPA
+    - name: JCOMs
+    - name: WMS

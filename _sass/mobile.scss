@@ -1,4 +1,5 @@
 @media screen and (max-width: 999px) {
+
   .first-line-container {
     display: grid;
   }
@@ -9,23 +10,29 @@
     margin: 0;
   }
 
+  .main > * {
+    clear: both;
+    float: none;
+    max-width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+
   .main-point-header > h1 {
     font-size: 7.5vw;
   }
 
   .sub-point-header > h2, .sub-point-header > p {
-    font-size: 4.7vw;
+    font-size: 4.58566971vw;
+  }
+  .sub-point-header > h2.interessi-h2{
+    font-size: 6vw;
   }
 
-  .main > * {
-    clear: both;
-    float: none;
-    max-width:100%;
-  }
-  
-}
-
-@media screen and (max-width: 425px) {
   .first-line {
     font-size: 45pt;
   }
