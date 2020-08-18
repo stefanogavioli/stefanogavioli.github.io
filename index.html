@@ -4,6 +4,16 @@ permalink : /
 layout: simple
 ---
 <div class="main">
+    <div>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+        </div>
     <div class="column-left">
         {% include data.html data=site.data.education name="Educazione"%}
 
@@ -12,7 +22,7 @@ layout: simple
         {% include data-no-sub-head-pic.html data=site.data.activities name="Attività" %}
     </div>
     <div class="column-right">
-        
+
         {% include data-bars.html data=site.data.skillprofessionali name="Skill professionali" %}
 
         {% include data-bars.html data=site.data.skillpersonali name="Skill personali" %}
