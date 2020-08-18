@@ -10,9 +10,11 @@
     <div class="sub-point">
         <div class="sub-point-header">
             <img src="/assets/img/larrow-small.png"/>
-            <a href="{{element.url}}"><h2>{{element.title}}</h2></a>
-            {{element.excerpt}}
-            <a href="{{element.url}}">... Leggi di più</a>
+            <a href="{{element.url}}" class="post-title"><h2>{{element.title}}</h2></a>
+            <div class="post-excerpt">
+                {{element.excerpt}}
+            </div>
+            <a href="{{element.url}}" class="leggidipiu">... Leggi di più</a>
         </div>
     </div>
     {% endfor %}
