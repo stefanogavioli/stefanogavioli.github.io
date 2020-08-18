@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: thin
 title:  "Welcome to Jekyll!"
 date:   2019-12-18 19:54:35 +0100
 categories: jekyll update
