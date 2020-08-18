@@ -5,14 +5,8 @@ layout: simple
 ---
 <div class="main">
     <div>
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          {{ post.excerpt }}
-        </li>
-      {% endfor %}
-    </ul>
+        {% include post.html data=site.posts name="Blog" %}
+
         </div>
     <div class="column-left">
         {% include data.html data=site.data.education name="Educazione"%}
