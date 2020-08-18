@@ -6,7 +6,7 @@
         <img src="/assets/img/larrow.png"/>
         <h1>{{include.name}}</h1>
     </div>
-    {% for element in data limit:3%}
+    {% for element in data limit:include.limit%}
     <div class="sub-point">
         <div class="sub-point-header">
             <img src="/assets/img/larrow-small.png"/>
