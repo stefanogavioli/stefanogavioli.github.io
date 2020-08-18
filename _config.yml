@@ -36,7 +36,7 @@ locale: it_IT
 
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
-paginate: 5
+paginate: 2
 paginate_path: "/blog/page:num/"
 
 # Exclude from processing.
