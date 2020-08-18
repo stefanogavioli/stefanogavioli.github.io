@@ -315,19 +315,12 @@ color: #050B10;
 }
 
 
-
 .header-thin {
   background-color: #2D71B8;
   color: black;
-  min-height: 70px;
   min-width: 100%;
   //display: flex;
-  padding: 5% 0;
   margin-bottom: 5vh;
-}
-
-.header-thin:first-child {
-  padding: 10% 0;
 }
 
 .header-thin a {
