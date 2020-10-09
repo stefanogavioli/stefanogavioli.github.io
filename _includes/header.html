@@ -1,19 +1,51 @@
+<script>
+    $(document).ready(function () {
+        $("[href]").each(function () {
+            if (this.href == window.location.href) {
+                $(this).attr("id", "current-link");
+            }
+        });
+    });
+</script>
+
 <div class="header">
-    <div class="first-line">
-        <div class="first-line-container">
-            <img class="site-pic" src="/assets/img/{{include.pic}}">
-            <div class="name">
-                <h1>{{include.name}}</h1> {{include.surname}}
-            </div>
-        </div>
+    <div style="width:100%;display:flex;align-items:center;justify-content: center">
+        <img style="min-width:100px;min-height:100px"
+             class="site-pic" src="/assets/img/{{include.pic}}">
+    </div>
+    <div class="name">
+        <h1>{{include.name}}</h1> <span>{{include.surname}}</span>
+    </div>
+    <div class="menu">
+        <ul>
+
+            <li><a href="/" class="">Home</a></li>
+            <li><a href="/curriculum" class="">Curriculum</a></li>
+        </ul>
     </div>
     <div class="contact-list-container">
-        {% for contact in site.data.contacts %}
-        <div class="contact">
-            <i class="contact-pic material-icons">{{contact.icon}} </i>
-            {{contact.html}}
+        <div style="width:100%;display:flex;flex-direction:column;justify-content: space-between;height:163px">
+            <div style="margin-bottom: 50px; line-height:1em; text-align:right;">
+                <span style="font-size:16pt;font-family: 'Cedarville Cursive', cursive;">
+                    Whatever you do, <br> do it well
+                </span>
+            </div>
+            <div style="height:50px;display:flex;justify-content: space-between;flex-direction: column;margin-left:-10px;width:250px;">
+                <hr>
+                <span style="font-size:13pt;margin-left:20px">
+                Contact Me
+            </span>
+                <hr>
+            </div>
         </div>
-        {% endfor %}
-        <br style="clear: left;"/>
+        <div class="contact-list">
+            <span>-</span>{% for contact in site.data.contacts %}
+            <span>&nbsp;</span><a class="contact" href="{{contact.link}}">
+            <svg xmlns="http://www.w3.org/2000/svg" class="contact-pic" viewBox="0 0 24 24" fill="white">
+                <path d="{{contact.path}}"/>
+            </svg>
+        </a><span>&nbsp;-</span>
+            {% endfor %}
+        </div>
     </div>
 </div>

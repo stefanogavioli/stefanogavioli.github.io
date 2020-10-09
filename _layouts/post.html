@@ -1,0 +1,13 @@
+---
+layout: clear
+name: Stefano
+surname: Gavioli
+pic: pic.png
+---
+{% include header-thin.html name=layout.name surname=layout.surname pic=layout.pic%}
+<div class="main">
+    <div class="title">
+        <h1>{{page.title}}</h1>
+    </div>
+{{content}}
+</div>
