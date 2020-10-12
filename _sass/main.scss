@@ -33,6 +33,10 @@
   justify-content: flex-start;
 }
 
+.site-pic{
+  width:100px;
+}
+
 .name-and-pic-container {
   display: flex;
   flex-direction: column;
@@ -386,7 +390,7 @@
   list-style: none;
 }
 
-body, p {
+p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 13pt;
@@ -396,13 +400,6 @@ body, p {
 h1, h2, h3, h4 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-}
-
-img {
-  min-width: 20px;
-  max-width: 50px;
-  min-height: 20px;
-  max-height: 50px;
 }
 
 
@@ -438,12 +435,6 @@ img {
 }
 
 
-.first-line-thin img {
-  max-width: 50px;
-  max-height: 50px;
-  margin-bottom: 8%;
-}
-
 .first-line-container-thin {
   display: flex;
   flex-wrap: wrap;
@@ -453,4 +444,23 @@ img {
 
 .first-line-container-thin * {
   margin: 10px;
+}
+
+
+hr {
+  opacity: 0.2;
+}
+
+
+img {
+  max-width: 300%;
+}
+
+.parallax-container{
+  height:300px;
+
+}
+
+.parallax-container img {
+  max-width: 200%;
 }

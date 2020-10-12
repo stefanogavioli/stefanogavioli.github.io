@@ -189,6 +189,14 @@
     font-size: 14pt;
   }
 
+  .parallax-container {
+    height: 200px;
+
+  }
+  .parallax-container img {
+    max-width: 300%;
+  }
+
 }
 
 @media screen and (max-width: 405px) {
@@ -204,8 +212,8 @@
     margin-left: 10px;
   }
 
-  .motto{
-    right:10px;
+  .motto {
+    right: 10px;
   }
   .contact-me-and-motto-container {
     width: calc(100% - 30px);
@@ -251,8 +259,8 @@
     font-size: 11pt;
 
   }
-  .sub-point-content{
-   margin-left:30px;
+  .sub-point-content {
+    margin-left: 30px;
   }
 
 
@@ -263,5 +271,6 @@
   body, p {
     font-size: 12pt;
   }
+
 
 }

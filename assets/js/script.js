@@ -13,46 +13,47 @@ function slugify(string) {
         .replace(/-+$/, '') // Trim - from end of text
 }
 
+
 $(document).ready(function () {
-    $('.collapsible').collapsible();
-
-    for (let i = 0; i < skillsprofessionali.length; ++i) {
-        let id = "#" + slugify(skillsprofessionali[i]["name"]);
-        // console.log(id);
-        var tmpBar = new ldBar(id);
-        $(id).waypoint(function () {
+    if (window.location.href.split("/")[3] === "curriculum") {
+        for (let i = 0; i < skillsprofessionali.length; ++i) {
+            let id = "#" + slugify(skillsprofessionali[i]["name"]);
             // console.log(id);
-            let bar = document.getElementById(slugify(skillsprofessionali[i]["name"])).ldBar;
-            bar.set(skillsprofessionali[i]["value"]);
-        }, {offset: '100%'});
-    }
-    
-    for (let i = 0; i < skillspersonali.length; ++i) {
-        let id = "#" + slugify(skillspersonali[i]["name"]);
-        // console.log(id);
-        var tmpBar = new ldBar(id);
-        $(id).waypoint(function () {
-            // console.log(id);
-            let bar = document.getElementById(slugify(skillspersonali[i]["name"])).ldBar;
-            bar.set(skillspersonali[i]["value"]);
-        }, {offset: '100%'});
-    }
+            var tmpBar = new ldBar(id);
+            $(id).waypoint(function () {
+                console.log(id);
+                let bar = $('#'+slugify(skillsprofessionali[i]["name"]))[0].ldBar;
+                bar.set(skillsprofessionali[i]["value"]);
+                this.destroy()
+            }, {offset: '100%'});
+        }
 
+        for (let i = 0; i < skillspersonali.length; ++i) {
+            let id = "#" + slugify(skillspersonali[i]["name"]);
+            // console.log(id);
+            var tmpBar = new ldBar(id);
+            $(id).waypoint(function () {
+                // console.log(id);
+                let bar = document.getElementById(slugify(skillspersonali[i]["name"])).ldBar;
+                bar.set(skillspersonali[i]["value"]);
+                this.destroy()
+            }, {offset: '100%'});
+        }
+    }
     $(window).scroll(function () {
-			if ($(this).scrollTop() > 50) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-});
+        if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
 
 
 M.AutoInit();
