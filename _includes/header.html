@@ -1,7 +1,7 @@
 <script>
     $(document).ready(function () {
-        $("[href]").each(function () {
-            if (this.href == window.location.href) {
+        $('#menu').find('[href]').each(function () {
+            if (this.href === window.location.href || (this.href.split("/")[3] === "blog" && window.location.href.split("/")[3]==="jekyll")) {
                 $(this).attr("id", "current-link");
             }
         });
@@ -9,28 +9,21 @@
 </script>
 
 <div class="header">
-    <div style="width:100%;display:flex;align-items:center;justify-content: center">
-        <img style="min-width:100px;min-height:100px"
+    <div class="name-and-pic-container">
+        <img style="min-width:100px;min-height:100px" alt="stefano-pic"
              class="site-pic" src="/assets/img/{{include.pic}}">
-    </div>
-    <div class="name">
-        <h1>{{include.name}}</h1> <span>{{include.surname}}</span>
-    </div>
-    <div class="menu">
-        <ul>
-
-            <li><a href="/" class="">Home</a></li>
-            <li><a href="/curriculum" class="">Curriculum</a></li>
-        </ul>
+        <div class="name">
+            <h1>{{include.name}}</h1> <span>{{include.surname}}</span>
+        </div>
     </div>
     <div class="contact-list-container">
-        <div style="width:100%;display:flex;flex-direction:column;justify-content: space-between;height:163px">
-            <div style="margin-bottom: 50px; line-height:1em; text-align:right;">
-                <span style="font-size:16pt;font-family: 'Cedarville Cursive', cursive;">
+        <div class="contact-me-and-motto-container">
+            <div class="motto">
+                <span style="font-family: 'Cedarville Cursive', cursive;">
                     Whatever you do, <br> do it well
                 </span>
             </div>
-            <div style="height:50px;display:flex;justify-content: space-between;flex-direction: column;margin-left:-10px;width:250px;">
+            <div class="contact-me">
                 <hr>
                 <span style="font-size:13pt;margin-left:20px">
                 Contact Me
@@ -48,4 +41,12 @@
             {% endfor %}
         </div>
     </div>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="/" class="">Home</a></li>
+            <li><a href="/curriculum" class="">Curriculum</a></li>
+            <li><a href="/blog/" class="">Blog</a></li>
+        </ul>
+    </div>
+
 </div>

@@ -1,43 +1,32 @@
 ---
-title: Stefano Gavioli
+title: Stefano Gavioli - CV
 permalink : /curriculum
-layout: simple
+layout: page
 ---
-<div class="main">
-    <div style="width:66%">
-        <!--    <div>-->
-        <!--        {% include post.html data=site.posts name="Blog" limit=3%}-->
 
-        <!--        </div>-->
-<!--        <div class="column-left">-->
-            <h1>Curriculum Vitae</h1>
-        <span>
+<h1>Curriculum Vitae</h1>
+<span>
             Here is my curriculum vitae:
         </span>
-        <hr style="margin:20px 0px 20px; width:100%">
-            {% include data.html data=site.data.work name="Esperienze Lavorative" %}
+<hr style="margin:20px 0px 20px; width:100%">
+{% include data.html data=site.data.work name="Esperienze Lavorative" %}
 
-            {% include data.html data=site.data.education name="Educazione"%}
+{% include data.html data=site.data.education name="Educazione"%}
 
 
-            {% include data-no-sub-head-pic.html data=site.data.activities name="Attività" %}
-<!--        </div>-->
-<!--        <div class="column-right">-->
+{% include data-no-sub-head-pic.html data=site.data.activities name="Attività" %}
 
-            {% include data-bars.html data=site.data.skillprofessionali name="Skill professionali" %}
 
-            {% include data-bars.html data=site.data.skillpersonali name="Skill personali" %}
+{% include data-bars.html data=site.data.skillprofessionali name="Skill professionali" %}
 
-            {% include data-no-sub-head-pic.html data=site.data.interests name="Interessi" %}
-<!--        </div>-->
-    </div>
-</div>
+{% include data-bars.html data=site.data.skillpersonali name="Skill personali" %}
+
+{% include data-no-sub-head-pic.html data=site.data.interests name="Interessi" %}
+
+
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button"><i class="material-icons md-48">keyboard_arrow_up</i></a>
 <script type="text/javascript">
     var skillsprofessionali = {{site.data.skillprofessionali.elements | jsonify}};
     var skillspersonali     = {{site.data.skillpersonali.elements | jsonify}}
 </script>
 <script src="assets/js/script.js" type="text/javascript"></script>
-<script>
-  AOS.init();
-</script>

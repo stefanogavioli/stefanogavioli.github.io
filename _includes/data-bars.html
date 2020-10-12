@@ -8,12 +8,15 @@
     </div>
 
     <div class="sub-point">
+        <br>
         <div class="sub-point-content">
             {% for element in data.elements %}
             <div class="sub-point-bar-container">
                 <p class="sub-point-bar-name">{{element.name}}</p>
-                <div class="ldBar label-center" data-value="0";
-                        id="{{element.name | slugify}}"></div>
+                <div class="data-bar">
+                    <div class="ldBar label-center" data-value="0" data-duration="3000"
+                         id="{{element.name | slugify}}" ></div>
+                </div>
             </div>
             {% endfor %}
             {% if data.learnt %}

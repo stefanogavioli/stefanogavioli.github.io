@@ -1,13 +1,24 @@
 ---
-layout: clear
-name: Stefano
-surname: Gavioli
-pic: pic.png
+layout: page
 ---
-{% include header-thin.html name=layout.name surname=layout.surname pic=layout.pic%}
-<div class="main">
-    <div class="title">
-        <h1>{{page.title}}</h1>
-    </div>
+<h1>{{page.title}}</h1>
+  <h6><a href="/blog/">Blog</a> > {{page.title}}</h6>
+<hr style="margin-bottom:20px; margin-top:20px">
 {{content}}
-</div>
+
+<hr style="margin-bottom:20px; margin-top:20px">
+<div class="post-ending">
+<span style="font-size:16pt;font-family: 'Cedarville Cursive', cursive;">
+      Stefano Gavioli
+</span>
+<span>
+  {{page.date | date_to_long_string}}
+</span>
+<br><br>
+<span style="">
+  Categories:
+  {% for category in page.categories %}
+   - <a href="/category/{{ category }}">#{{category}}</a>
+  {% endfor %} -
+</span>
+  </div>

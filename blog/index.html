@@ -1,25 +1,15 @@
 ---
-title: Stefano Gavioli
-layout: thin
+title: Stefano Gavioli - Blog
+layout: page
 ---
+<h1>Blog Posts</h1>
+<hr style="margin-top:20px;margin-bottom:20px">
+{% for post in paginator.posts %}
+    {% include post_preview.html post=post %}
+{% endfor %}
 
-<!-- This loops through the paginated posts -->
-<div class="main">
-    {% for post in paginator.posts %}
-    <div class="sub-point">
-        <div class="sub-point-header">
-            <img src="/assets/img/larrow-small.png"/>
-            <a href="{{post.url}}" class="post-title" style="font-size: 15pt"><h2 style="color: #054C9C;font-size: 15pt">{{post.title |
-                upcase}}</h2>/{{post.date | date_to_long_string}}</a>
-            <div class="post-excerpt">
-                {{post.excerpt}}
-            </div>
-            <a href="{{post.url}}" class="leggidipiu">... Leggi di più</a>
-        </div>
-    </div>
-    {% endfor %}
-
-    <!-- Pagination links -->
+<!-- Pagination links -->
+<div style="display:flex;align-items:center;justify-content: center">
     <div class="pagination">
         <ul class="pagination justify-content-center">
             <li class="page-item {% unless paginator.previous_page %}disabled{%endunless%}">
@@ -32,5 +22,4 @@ layout: thin
             </li>
         </ul>
     </div>
-
 </div>
