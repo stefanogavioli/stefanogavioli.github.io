@@ -19,27 +19,28 @@ $(document).ready(function () {
         for (let i = 0; i < skillsprofessionali.length; ++i) {
             let id = "#" + slugify(skillsprofessionali[i]["name"]);
             // console.log(id);
-            var tmpBar = new ldBar(id);
+            // var tmpBar = new ldBar(id);
             $(id).waypoint(function () {
-                console.log(id);
-                let bar = $('#' + slugify(skillsprofessionali[i]["name"]))[0].ldBar;
+                // console.log(id);
+                let bar = $(id)[0].ldBar;
                 bar.set(skillsprofessionali[i]["value"]);
                 this.destroy()
-            }, {offset: '100%'});
+            }, {offset: '99%'});
         }
 
         for (let i = 0; i < skillspersonali.length; ++i) {
             let id = "#" + slugify(skillspersonali[i]["name"]);
             // console.log(id);
-            var tmpBar = new ldBar(id);
+            // var tmpBar = new ldBar(id);
             $(id).waypoint(function () {
                 // console.log(id);
-                let bar = document.getElementById(slugify(skillspersonali[i]["name"])).ldBar;
+                let bar = $(id)[0].ldBar;
                 bar.set(skillspersonali[i]["value"]);
                 this.destroy()
-            }, {offset: '100%'});
+            }, {offset: '99%'});
         }
     }
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
