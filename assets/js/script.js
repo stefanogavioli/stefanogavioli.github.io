@@ -22,7 +22,7 @@ $(document).ready(function () {
             var tmpBar = new ldBar(id);
             $(id).waypoint(function () {
                 console.log(id);
-                let bar = $('#'+slugify(skillsprofessionali[i]["name"]))[0].ldBar;
+                let bar = $('#' + slugify(skillsprofessionali[i]["name"]))[0].ldBar;
                 bar.set(skillsprofessionali[i]["value"]);
                 this.destroy()
             }, {offset: '100%'});
@@ -56,4 +56,6 @@ $(document).ready(function () {
     });
 
 
-M.AutoInit();
+    M.AutoInit();
+
+});
