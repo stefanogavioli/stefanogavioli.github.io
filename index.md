@@ -26,4 +26,4 @@ It's a Blog!
 
 
 
-(I am just hoping you don't have a 4K monitor so you can enjoy the parallax of the images above)
+(I am just adding stuff so you can enjoy the parallax of the images above)
