@@ -32,6 +32,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
 locale: it_IT
 
 permalink: /:categories/:year/:month/:day/:title:output_ext
