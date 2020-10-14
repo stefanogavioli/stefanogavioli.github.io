@@ -27,3 +27,5 @@ It's a Blog!
 
 
 (I am just adding stuff so you can enjoy the parallax of the images above)
+
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/7ba5cf4e-bf35-42e4-9d70-6a1365c47a9b/cd.js" type="text/javascript" async></script>
