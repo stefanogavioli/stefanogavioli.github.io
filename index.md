@@ -6,7 +6,7 @@ layout: page
 # Welcome!
 
 This is my website! It It has been made with **jekyll**, a good ammount of time, and delivered through **github pages**! 
-{% include parallaximage.html image='/assets/img/code-background.jpg'%}
+{% include parallaximage.html image='/assets/img/code-background.webp'%}
 ## What is this all about?
 I have come a cross personal website in the past and always found them fascinating! I, as a computer engineer, could not resist the temptation to tinker around and build my own.
 
@@ -19,7 +19,7 @@ I, as stated above, am a computer engineer, love to tinker around. Built a coupl
 Besides working/studying and having these kinds of entertainment I have much more depth and enjoy spending time in different hobbies. 
 For instance you ~~can~~ **must** see the videos I made of my journeys around the globe (at least Europe for now) on my [Instagram account](https://www.instagram.com/steps.by.steps/channel/) ❤️
 
-{% include parallaximage.html image='/assets/img/tree2.jpg'%} 
+{% include parallaximage.html image='/assets/img/tree2.webp'%} 
 ## What about the Blog
 It's a Blog!
 
