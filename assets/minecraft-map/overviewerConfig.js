@@ -2,18 +2,18 @@ var overviewerConfig = {
     "CONST": {
         "tileSize": 384,
         "image": {
-            "defaultMarker": "http://capodannovalsugana.ns0.it/minecraft-map/signpost.png",
-            "signMarker": "http://capodannovalsugana.ns0.it/minecraft-map/signpost_icon.png",
-            "bedMarker": "http://capodannovalsugana.ns0.it/minecraft-map/bed.png",
-            "spawnMarker": "http://capodannovalsugana.ns0.it/minecraft-map/markers/marker_home.png",
-            "spawnMarker2x": "http://capodannovalsugana.ns0.it/minecraft-map/markers/marker_home_2x.png",
-            "queryMarker": "http://capodannovalsugana.ns0.it/minecraft-map/markers/marker_location.png",
-            "queryMarker2x": "http://capodannovalsugana.ns0.it/minecraft-map/markers/marker_location_2x.png",
+            "defaultMarker": "https://capodannovalsugana.ns0.it/minecraft-map/signpost.png",
+            "signMarker": "https://capodannovalsugana.ns0.it/minecraft-map/signpost_icon.png",
+            "bedMarker": "https://capodannovalsugana.ns0.it/minecraft-map/bed.png",
+            "spawnMarker": "https://capodannovalsugana.ns0.it/minecraft-map/markers/marker_home.png",
+            "spawnMarker2x": "https://capodannovalsugana.ns0.it/minecraft-map/markers/marker_home_2x.png",
+            "queryMarker": "https://capodannovalsugana.ns0.it/minecraft-map/markers/marker_location.png",
+            "queryMarker2x": "https://capodannovalsugana.ns0.it/minecraft-map/markers/marker_location_2x.png",
             "compass": {
-                "0": "http://capodannovalsugana.ns0.it/minecraft-map/compass_upper-left.png",
-                "1": "http://capodannovalsugana.ns0.it/minecraft-map/compass_upper-right.png",
-                "3": "http://capodannovalsugana.ns0.it/minecraft-map/compass_lower-left.png",
-                "2": "http://capodannovalsugana.ns0.it/minecraft-map/compass_lower-right.png"
+                "0": "https://capodannovalsugana.ns0.it/minecraft-map/compass_upper-left.png",
+                "1": "https://capodannovalsugana.ns0.it/minecraft-map/compass_upper-right.png",
+                "3": "https://capodannovalsugana.ns0.it/minecraft-map/compass_lower-left.png",
+                "2": "https://capodannovalsugana.ns0.it/minecraft-map/compass_lower-right.png"
             }
         },
         "mapDivId": "mcmap",
@@ -45,7 +45,7 @@ var overviewerConfig = {
             "zoomLevels": 9,
             "defaultZoom": 1,
             "maxZoom": 9,
-            "path": "http://capodannovalsugana.ns0.it/minecraft-map/day",
+            "path": "https://capodannovalsugana.ns0.it/minecraft-map/day",
             "base": "",
             "bgcolor": "#1a1a1a",
             "world": "world - overworld",
@@ -72,7 +72,7 @@ var overviewerConfig = {
             "zoomLevels": 9,
             "defaultZoom": 1,
             "maxZoom": 9,
-            "path": "http://capodannovalsugana.ns0.it/minecraft-map/night",
+            "path": "https://capodannovalsugana.ns0.it/minecraft-map/night",
             "base": "",
             "bgcolor": "#1a1a1a",
             "world": "world - overworld",
