@@ -13,14 +13,21 @@ excerpt_separator: <!--more-->
 <script src="/assets/minecraft-map/leaflet.js"></script>
 <link rel="stylesheet" href="/assets/minecraft-map/overviewer.css" type="text/css" />
 
+[Click here](/js/leaflet/minecraft/2020/10/27/minecraft-map.html#map) to jump to the map right away!
+
+
 The map was created with [overviewer](https://overviewer.org/) which creates all the png tiles and creates a ready-to-use map with [leaflet](https://leafletjs.com/). The resulting **60k** files, totaling a size of more than **2 GB** have been hosted locally since GitHub Pages (on which this website is hosted) does not support either too many files and too heavy repos.
 
-These files are hosted on a local machine with an [nginx](https://www.nginx.com/) server. Easy and simple. The leg work was to adapt the css in order to adapt the given one with the library I use here ([materializecss](https://materializecss.com/)).
+These files are hosted on a local machine with an [nginx](https://www.nginx.com/) server. Easy and simple. This server will **definitely <u>NOT</u>** be online all the time. This means the following map won't be available 24/7. I've put an image so you can see what it looks like.
 
-To reduce size I've also tried .webp images but they don't work as well as .png and do not save enough space to be worth. 
+{% include parallaximage.html image='/assets/img/minecraft-map.webp'%} 
+
+The leg work was to adapt the css in order to adapt the given one with the library I use here ([materializecss](https://materializecss.com/)). To reduce size I've also tried .webp images but they don't work as well as .png and do not save enough space to be worth. 
 <!--more-->
+<a id="map"></a>
 
 Here's the map:
+
 <div class="mapbody" style="margin-bottom: 2rem">
     <noscript style="color:white; background-color:black">
         If you can see this message, there is likely a problem loading the Overviewer JavaScript components.
