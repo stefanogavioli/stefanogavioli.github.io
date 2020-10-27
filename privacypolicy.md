@@ -4,11 +4,13 @@ permalink: /privacypolicy
 style: page
 ---
 # Privacy Policy
+<!--
 ##### Informativa ai sensi dell'art. 13 del Codice della Privacy
 
 ##### Ai sensi dell'articolo 13 del codice della D.Lgs. 196/2003, vi rendiamo le seguenti informazioni.
+-->
 
-We at https://stefanogavioli.eu value our visitors privacy. This document describes the various types of personal data gathered and how they are used.
+We at [https://stefanogavioli.eu](https://stefanogavioli.eu) value our visitors privacy. This document describes the various types of personal data gathered and how they are used.
 
 This website has been created through GitHub Pages. You can find their Privacy Policy at [https://help.github.com/articles/github-privacy-statement](https://help.github.com/articles/github-privacy-statement) 
 
