@@ -1,7 +1,6 @@
 <script>
     $(document).ready(function () {
         $('#menu').find('[href]').each(function () {
-            console.log(window.location.href.split("/")[4])
             if (this.href === window.location.href || (this.href.split("/")[3] === "blog" && window.location.href.split("/")[3]==="blog" && window.location.href.split("/")[4]!== undefined)) {
                 $(this).attr("id", "current-link");
             }
