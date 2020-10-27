@@ -216,6 +216,16 @@
 }
 
 @media screen and (max-width: 405px) {
+
+  .privacypolicy {
+    margin-top: 5px;
+    left: calc(50% - 51.57px);
+  }
+
+  .privacypolicy > a {
+    font-size: 7pt;
+  }
+
   .main-point-header > h1 {
     font-size: 26px;
   }

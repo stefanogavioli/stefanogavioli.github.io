@@ -12,6 +12,10 @@
     z-index:1000;
 }
 
+a {
+  word-wrap: break-word;
+}
+
 .back-to-top > i {
   font-size: 36pt;
 
@@ -104,7 +108,7 @@
   color: white;
   width: 200px;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   display: flex;
   flex-direction: column;
   align-content: baseline;
@@ -155,6 +159,22 @@
 
 .contact-list-container * {
   font-size: 16pt;
+}
+
+.privacypolicy{
+  position: relative;
+  left: calc(50% - 58.92px + 15px);
+  margin-top:10px;
+}
+
+.privacypolicy > a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 8pt;
+}
+
+.privacypolicy > a:visited{
+  color:inherit;
 }
 
 .contact-pic {
