@@ -4,7 +4,10 @@ layout: page
 ---
 <h1>Blog Posts</h1>
 <hr style="margin-top:20px;margin-bottom:20px">
-{% if post.size > 0 %}
+
+{% if paginator.posts.size > 0 %}
+    There are {{paginator.posts | size}} posts:
+
     {% for post in paginator.posts %}
         {% include post_preview.html post=post %}
     {% endfor %}
