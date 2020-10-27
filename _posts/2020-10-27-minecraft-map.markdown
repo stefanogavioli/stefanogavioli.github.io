@@ -1,8 +1,15 @@
 ---
 layout: post
+
+ogtype: article
+ogimage: /assets/img/minecraft-map-tb.png
+
+
 title:  "Minecraft map"
 date:   2020-10-27 10:15:00 +0200
 categories: js leaflet minecraft
+description: Non-real-time interactive Minecraft map with leaflet
+ogdescription: Interactive Minecraft map
 excerpt_separator: <!--more-->
 ---
 <script type="text/javascript" src="/assets/minecraft-map/overviewerConfig.js"></script>
