@@ -23,7 +23,8 @@ var overviewerConfig = {
         "LOWERRIGHT": 2
     },
     "worlds": [
-        "world - overworld"
+        "world - overworld",
+        "world - nether"
     ],
     "map": {
         "debug": false,
@@ -92,6 +93,29 @@ var overviewerConfig = {
                 96,
                 -176
             ],
+            "north_direction": 0
+        },
+        {
+            "name": "Nether",
+            "zoomLevels": 8,
+            "defaultZoom": 1,
+            "maxZoom": 8,
+            "path": "https://capodannovalsugana.ns0.it/minecraft-map/Nether",
+            "base": "",
+            "bgcolor": "#1a1a1a",
+            "world": "world - nether",
+            "last_rendertime": 1603970324,
+            "imgextension": "png",
+            "isOverlay": false,
+            "poititle": "Markers",
+            "showlocationmarker": true,
+            "center": [
+                -208,
+                96,
+                -176
+            ],
+            "minZoom": 0,
+            "spawn": false,
             "north_direction": 0
         }
     ]
