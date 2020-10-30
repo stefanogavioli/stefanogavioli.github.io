@@ -463,7 +463,12 @@ overviewer.util = {
             obj.marker_groups = undefined;
 
             if (overviewer.collections.haveSigns == true) {
+                console.log("have signs --")
+                console.log(obj)
+                console.log(markers)
                 // if there are markers for this tileset, create them now
+                console.log(markers !== 'undefined')
+                console.log(obj.path in markers)
                 if ((typeof markers !== 'undefined') && (obj.path in markers)) {
                     overviewer.util.debug("this tileset has markers:", obj);
                     obj.marker_groups = {};

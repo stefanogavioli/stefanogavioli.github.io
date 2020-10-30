@@ -43,7 +43,9 @@ Here's the map:
     <div id="mcmap"></div>
     
     <script>
-    $(document).ready(function() {overviewer.util.initialize()});
+    $(document).ready(function() {
+        overviewer.util.initialize()
+        });
     </script>
 </div>
 

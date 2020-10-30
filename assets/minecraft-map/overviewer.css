@@ -1,6 +1,6 @@
 
 .mapbody {
-    height: 80vh;
+    height: 90vh;
     min-height: 300px;
     max-height: 600px;
     margin: 0px;
@@ -16,17 +16,39 @@
     margin: 0px;
     border-bottom: none;
     line-height: 1.3rem;
-    height:1.3rem;
+    height: 1.3rem;
 }
 
-[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+[type="radio"]:not(:checked) + span, [type="radio"]:checked + span {
     font-size: 12px;
-    padding-left:25px;
+    padding-left: 25px;
+    height: 20px;
 }
 
-[type="radio"]+span:before, [type="radio"]+span:after {
-    width:13px;
-    height:13px;
+[type="radio"] + span:before, [type="radio"] + span:after {
+    width: 13px;
+    height: 13px;
+}
+
+
+[type="checkbox"] + span:not(.lever):before, [type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    left: 3px;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+    width: 8px;
+    height: 16px;
+    top: -1px;
+    left: 0px;
+}
+
+[type="checkbox"] + span:not(.lever) {
+    height: 20px;
+    font-size: 12px;
+    padding-left:20px;
 }
 
 #mcmap {
@@ -38,13 +60,13 @@
     height: 100px;
 }
 
-.infoWindow>img {
-    width:80px;
+.infoWindow > img {
+    width: 80px;
     float: left;
     image-rendering: -moz-crisp-edges;
 }
 
-.infoWindow>p {
+.infoWindow > p {
     text-align: center;
     font-family: monospace;
 }
@@ -72,10 +94,10 @@
     line-height: 160%;
     text-align: center;
     padding: 0px 6px;
-    
+
     background-image: url('control-bg.png');
     background-repeat: repeat-x;
-    
+
     border: 1px solid #A9BBDF;
     border-radius: 2px 2px;
     box-shadow: rgba(0, 0, 0, 0.347656) 2px 2px 3px;
@@ -97,11 +119,11 @@
 .customControl > div.dropDown {
     font-size: 12px;
     background-color: white;
-    
+
     border: 1px solid #A9BBDF;
     border-radius: 2px 2px;
     box-shadow: rgba(0, 0, 0, 0.347656) 2px 2px 3px;
-    
+
     display: none;
 }
 
@@ -115,7 +137,7 @@
 
 #link, #coordsDiv, #progressDiv {
     background-color: #fff; /* fallback */
-    background-color: rgba(255,255,255,0.55);
+    background-color: rgba(255, 255, 255, 0.55);
     border: 1px solid rgb(0, 0, 0);
     font-size: 9pt;
     padding-left: 2px;
@@ -125,7 +147,7 @@
 
 #link:hover {
     background-color: #fff; /* fallback */
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #searchControl {
@@ -141,11 +163,11 @@
     background-color: #fff;
 }
 
-#searchControl>input.inactive {
+#searchControl > input.inactive {
     color: #ccc;
 }
 
-#searchControl>input.active {
+#searchControl > input.active {
     color: #000;
 }
 
@@ -157,9 +179,9 @@ div#searchDropDown {
     display: none;
 }
 
-div.searchResultItem  {
+div.searchResultItem {
     overflow: hidden;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
 }
 
 div.searchResultItem img {
@@ -169,11 +191,12 @@ div.searchResultItem img {
 
 
 div.worldcontrol {
-    border: 2px solid rgba(0,0,0,0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background: #fff;
     padding: 2px;
 }
+
 div.worldcontrol select {
     background: #fff;
     border: 1px solid #fff;
@@ -191,9 +214,9 @@ div.worldcontrol select {
 }
 
 .ov-marker {
-    position:relative;
-    margin-left:-50%;
-    margin-top:-50%;
+    position: relative;
+    margin-left: -50%;
+    margin-top: -50%;
 }
 
 .ov-marker-legend {
