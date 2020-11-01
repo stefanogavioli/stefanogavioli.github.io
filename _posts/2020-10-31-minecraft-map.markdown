@@ -6,7 +6,7 @@ ogimage: /assets/img/minecraft-map-tb.png
 
 
 title:  "Minecraft map"
-date:   2020-10-27 10:15:00 +0200
+date:   2020-10-31 23:26:00 +0200
 categories: js leaflet minecraft
 description: Non-real-time interactive Minecraft map with leaflet
 ogdescription: Interactive Minecraft map
@@ -19,6 +19,8 @@ excerpt_separator: <!--more-->
 <link rel="stylesheet" href="/assets/minecraft-map/leaflet.css" />
 <script src="/assets/minecraft-map/leaflet.js"></script>
 <link rel="stylesheet" href="/assets/minecraft-map/overviewer.css" type="text/css" />
+
+<small>Last update on {{ page.date | date: "%d %B %Y - %H:%M"}}</small>
 
 [Click here](/blog/js/leaflet/minecraft/2020/10/27/minecraft-map.html#map) to jump to the map right away!
 
