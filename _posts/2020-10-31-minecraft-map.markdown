@@ -22,7 +22,7 @@ excerpt_separator: <!--more-->
 
 <small>Last update on {{ page.date | date: "%d %B %Y - %H:%M"}}</small>
 
-[Click here](/blog/js/leaflet/minecraft/2020/10/27/minecraft-map.html#map) to jump to the map right away!
+[Click here](/blog/js/leaflet/minecraft/2020/10/31/minecraft-map.html#map) to jump to the map right away!
 
 
 The map was created with [overviewer](https://overviewer.org/) which creates all the png tiles and creates a ready-to-use map with [leaflet](https://leafletjs.com/). The resulting **60k** files, totaling a size of more than **2 GB** have been hosted locally since GitHub Pages (on which this website is hosted) does not support either too many files and too heavy repos.
