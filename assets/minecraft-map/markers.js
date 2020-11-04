@@ -1,10 +1,10 @@
 var markers={
   "https://capodannovalsugana.ns0.it/minecraft-map/day": [
     {
-      "checked": false,
+      "checked": true,
       "createInfoWindow": true,
       "displayName": "Towns",
-      "groupName": "Towns0f62_0759",
+      "groupName": "Towns0f62_aeb4",
       "icon": "https://capodannovalsugana.ns0.it/minecraft-map/markers/marker_town.png",
       "showIconInLegend": false
     },
@@ -12,7 +12,7 @@ var markers={
       "checked": false,
       "createInfoWindow": true,
       "displayName": "Sign",
-      "groupName": "Signf096_0759",
+      "groupName": "Signf096_aeb4",
       "icon": "https://capodannovalsugana.ns0.it/minecraft-map/signpost_icon.png",
       "showIconInLegend": false
     }
