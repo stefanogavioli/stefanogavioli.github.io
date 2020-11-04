@@ -6,7 +6,7 @@ ogimage: /assets/img/minecraft-map-tb.png
 
 
 title:  "Minecraft map"
-date:   2020-10-31 23:26:00 +0200
+date:   2020-11-04 13:42:00 +0200
 categories: js leaflet minecraft
 description: Non-real-time interactive Minecraft map with leaflet
 ogdescription: Interactive Minecraft map

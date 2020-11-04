@@ -1,5 +1,5 @@
 var markersDB={
-  "Sign0096_80bf": {
+  "Sign8096_2c37": {
     "created": false,
     "name": "Sign",
     "raw": [
@@ -16,16 +16,23 @@ var markersDB={
         "x": 1057,
         "y": 69,
         "z": -4507
+      },
+      {
+        "hovertext": "Spawner here\n",
+        "text": "Spawner here\n",
+        "x": 164,
+        "y": 34,
+        "z": -4016
       }
     ]
   },
-  "Townsff62_80bf": {
+  "Towns7f62_2c37": {
     "created": false,
     "name": "Towns",
     "raw": [
       {
         "hovertext": "Our Home",
-        "text": "Where our houses are",
+        "text": "Where hour houses are",
         "x": 293,
         "y": 87,
         "z": -4083
