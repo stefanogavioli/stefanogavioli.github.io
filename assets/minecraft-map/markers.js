@@ -4,16 +4,16 @@ var markers={
       "checked": false,
       "createInfoWindow": true,
       "displayName": "Towns",
-      "groupName": "Towns7f62_2c37",
-      "icon": "markers/marker_town.png",
+      "groupName": "Towns0f62_0759",
+      "icon": "https://capodannovalsugana.ns0.it/minecraft-map/markers/marker_town.png",
       "showIconInLegend": false
     },
     {
       "checked": false,
       "createInfoWindow": true,
       "displayName": "Sign",
-      "groupName": "Sign8096_2c37",
-      "icon": "signpost_icon.png",
+      "groupName": "Signf096_0759",
+      "icon": "https://capodannovalsugana.ns0.it/minecraft-map/signpost_icon.png",
       "showIconInLegend": false
     }
   ]

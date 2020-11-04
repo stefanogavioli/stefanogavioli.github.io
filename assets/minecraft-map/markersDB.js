@@ -1,5 +1,5 @@
 var markersDB={
-  "Sign8096_2c37": {
+  "Signf096_0759": {
     "created": false,
     "name": "Sign",
     "raw": [
@@ -26,7 +26,7 @@ var markersDB={
       }
     ]
   },
-  "Towns7f62_2c37": {
+  "Towns0f62_0759": {
     "created": false,
     "name": "Towns",
     "raw": [
