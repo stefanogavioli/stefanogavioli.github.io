@@ -8,15 +8,14 @@ ogimage: /assets/img/minecraft-map-tb.png
 title:  "Minecraft map"
 date:   2020-10-31 13:42:00 +0200
 
-last_update: 2020-11-06 10:13:00 +0200
+last_update: 2020-11-08 19:19:00 +0200
 categories: js leaflet minecraft
 description: Non-real-time interactive Minecraft map with leaflet
 ogdescription: Interactive Minecraft map
 excerpt_separator: <!--more-->
 ---
 <script type="text/javascript" src="/assets/minecraft-map/overviewerConfig.js"></script>
-<script type="text/javascript" src="/assets/minecraft-map/overviewer.js"></script>
-<script type="text/javascript" src="/assets/minecraft-map/baseMarkers.js"></script>
+<script type="text/javascript" src="https://capodannovalsugana.ns0.it/minecraft-map/overviewer.js"></script>
 
 <link rel="stylesheet" href="/assets/minecraft-map/leaflet.css" />
 <script src="/assets/minecraft-map/leaflet.js"></script>
