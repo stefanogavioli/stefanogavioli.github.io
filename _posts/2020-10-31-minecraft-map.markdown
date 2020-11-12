@@ -6,7 +6,7 @@ ogimage: /assets/img/minecraft-map-tb.png
 
 
 title:  "Minecraft map"
-date:   2020-10-31 13:42:00 +0200
+date:   2020-10-31 14:32:00 +0200
 
 last_update: 2020-11-08 19:19:00 +0200
 categories: js leaflet minecraft
