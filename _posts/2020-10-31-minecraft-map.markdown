@@ -8,7 +8,7 @@ ogimage: /assets/img/minecraft-map-tb.png
 title:  "Minecraft map"
 date:   2020-10-31 14:32:00 +0200
 
-last_update: 2020-11-08 19:19:00 +0200
+last_update: 2020-11-12 14:32:00 +0200
 categories: js leaflet minecraft
 description: Non-real-time interactive Minecraft map with leaflet
 ogdescription: Interactive Minecraft map
@@ -57,3 +57,13 @@ This is map was made from a world taken from a private server. This is not a rea
 To update the map it has to be _"recompiled"_ to generate all the update image files. This procedures requires about 20mins with my machine (with a Ryzen5 1600) for a relative small world such as this. The more it grows the more it will need.
 
 If you have an online server you can schedule a periodic task to execute overviewer in order to update the map periodically.
+
+<br>
+### Data Table
+
+Here is the table as soon as I starded logging the size
+
+| Date  | world.zip | # of tiles | map weight |
+| ------------- | ------------- | ------------- | ------------- |
+| 27/10/2020  | 263 MB  | 60 000 +  | 2 GB +  |
+| 12/11/2020  | 1.2 GB  | 297 085  | 14.28 GB  |
