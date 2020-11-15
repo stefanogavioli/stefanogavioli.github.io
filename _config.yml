@@ -37,9 +37,6 @@ plugins:
 
 locale: en_US
 
-pdf:
-  cache: assets/pdf
-
 permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 
 paginate: 5
