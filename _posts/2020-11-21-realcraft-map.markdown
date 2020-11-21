@@ -23,9 +23,9 @@ excerpt_separator: <!--more-->
 
 <small>Last update on {{ page.last_update | date: "%d %B %Y - %H:%M"}}</small>
 
-[Click here](/blog/js/leaflet/minecraft/2011/11/21/realcraft-map.html#map) to jump to the map right away!
+[Click here](/blog/js/leaflet/minecraft/2020/11/21/realcraft-map.html#map) to jump to the map right away!
 
-This is the same map as in the [previous article](/blog/js/leaflet/minecraft/2011/11/21/realcraft-map.html) with a different server, with RLCraft.
+This is the same map as in the [previous article](/blog/js/leaflet/minecraft/2020/10/31/minecraft-map.html) with a different server, with RLCraft.
 <!--more-->
 
 
