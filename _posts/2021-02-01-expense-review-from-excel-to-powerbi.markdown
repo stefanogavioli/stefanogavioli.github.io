@@ -13,7 +13,9 @@ description: How to move from excel spreadsheet to PowerBI desktop visualization
 ogdescription: How to move from excel spreadsheet to PowerBI desktop visualizations
 excerpt_separator: <!--more-->
 ---
-I've tried many different apps that offered many reports, features and wathever, but in the last year I tried a new method using an app (Money Lover, but any other will do) to track expenses on the fly and then copy those expenses and transactions into an **Excel spreadhseet**. <!-- more -->I had a sum-up sheet with balances in-out, expense categories, savings, grouped by month and 12 monthly sheets with in and out in which there were also a single month overview. This method (besides the unrealistc budget I set) was too rigid. An extra category I might wanted to add later would have needed to add a single row in every single sheet plus adjusting the tables.
+I've tried many different apps that offered many reports, features and wathever, but in the last year I tried a new method using an app (Money Lover, but any other will do) to track expenses on the fly and then copy those expenses and transactions into an **Excel spreadhseet**.
+ <!--more-->
+ I had a sum-up sheet with balances in-out, expense categories, savings, grouped by month and 12 monthly sheets with in and out in which there were also a single month overview. This method (besides the unrealistc budget I set) was too rigid. An extra category I might wanted to add later would have needed to add a single row in every single sheet plus adjusting the tables.
 
 A *headache*. So I stick with the current configuration for the last year and thinking to do changes on the upcoming one.
 
@@ -31,7 +33,7 @@ You can see it here:
 Than each monthly sheet contained two columns: **Debit** and **Credit** or Give and Take. (One also contained a separate give column dedicated to saving accounts). Each column contains an expense or income lines with date, category and reason/description.
 
 You can see it here:
-{% include parallaximage.html image='/assets/img/excel-budget-expenses.webp'%} 
+{% include parallaximage.html image='/assets/img/excel-month-expenses.webp'%} 
 
 ### Overview spreadsheet
 The overview spreadsheet is nothing more than a collector that then shows highly summarized data and some graphics.
