@@ -1,7 +1,18 @@
 - name: SW ENGINEER INTERN
+  init: 2020
+  end: 2021
+  at: Swisslog Italia
+  short: Confronto e prototipazione di tecnologie di Business Intelligence (PowerBI ed ELK) all'interno di un prodotto software di gestione di magazzini automatizzati per la tesi magistrale.
+  learnt:
+    - name: PowerBI
+    - name: Elastic
+    - name: Kibana
+    - name: BI
+
+- name: SW ENGINEER INTERN
   init: 2018
   end: 2019
-  at: Swisslog Italia SpA
+  at: Swisslog Italia
   short: Aiutato nello sviluppo di un grosso progetto in un team di 5-10 persone
   learnt:
     - name: J2EE
