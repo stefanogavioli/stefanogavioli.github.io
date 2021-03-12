@@ -8,7 +8,7 @@ layout: page
 This is my website! It It has been made with **jekyll**, a good ammount of time, and delivered through **github pages**! 
 {% include parallaximage.html image='/assets/img/code-background.webp'%}
 ## What is this all about?
-I have come a cross personal website in the past and always found them fascinating! I, as a computer engineer, could not resist the temptation to tinker around and build my own.
+I have come across personal website in the past and always found them fascinating! As a computer engineer I could not resist the temptation to tinker around and build my own.
 
 At first I decided to have just my curriculum (which you can check it out [here!](/curriculum)) following the same design i had for the paper one. Some months later I decided it was both not enough and lacked some better design. I then put some more time in css and js (since it is a somewhat static website there's not much backend \*sigh\*) and this is what came out of it. It is the same as the old one, but with a landing page (this one lol) and a Blog (plus some layout redesign).
 
