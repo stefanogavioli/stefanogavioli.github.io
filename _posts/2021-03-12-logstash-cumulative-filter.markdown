@@ -15,7 +15,7 @@ ogdescription: Logstash cumulative sum filter
 excerpt_separator: <!--more-->
 ---
 During the developing of my master thesis work I found I needed to compute a cumulative sum of some fields. Using Kibana for Business Analytics it is possible to compute the cumulative sum, but with a caveat: it is computed on the selected time span. This is an usual and correct behaviour in reporting tools, but what happened if the value itself has to be computed?
-
+<!--more-->
 As in any BI enviroment the solution is to store the value inside the datawarehouse (or extracted at runtime if using a virtual datawarehouse technique). Inside the ELK stack Logstash is with respect to a more standard BI architecture (i.e. not using ELK) is the ETL (Extract, Transform, Load) tool.
 
 Logstash has several filters, but none would enable me to achieve what I envisioned. Memorize filter developed by alcanzar (https://github.com/alcanzar/logstash-filter-memorize) was the closest one, yet wasn't directly available for Logstash 7.6 due to requirements. A simple adjusment made the plugin work as intended on Logstash 7.x, but was not possible todo was I wanted to do. This is way I developed the [**logstash-filter-cusum**](https://github.com/deletX/logstash-filter-cusum/) filter plugin.
