@@ -6,9 +6,9 @@ ogtype: article
 
 
 title:  "Logstash-cumulative-filter"
-date:   2020-03-12 18:36:00 +0200
+date:   2021-03-12 18:36:00 +0200
 
-last_update: 2020-03-12 18:36:00 +0200
+last_update: 2021-03-12 18:36:00 +0200
 categories: logstash filters elasticsearch elastic
 description: An implementation of a logstash filter designed to perform a cumulative sum
 ogdescription: Logstash cumulative sum filter
